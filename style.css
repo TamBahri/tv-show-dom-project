@@ -1,3 +1,253 @@
+body {
+  background-color: rgb(59, 58, 59);
+  margin: 0;
+  padding: 0;
+}
+
+.div-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+}
+
+.logo {
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  color: rgb(20, 91, 184);
+  margin: 0;
+  position: fixed;
+  padding: 20px 30px;
+  box-shadow: 5px 5px 10px black;
+  align-self: center;
+  z-index: 1;
+}
+
+.pLogo {
+  position: absolute;
+  color: rgb(240, 255, 246);
+  margin-top: 25px;
+  font-size: medium;
+  position: fixed;
+  padding: 20px 37px;
+  z-index: 2;
+}
+
+label {
+  color: rgb(240, 255, 247);
+  margin: 10px;
+}
+
+.div-filter {
+  align-self: center;
+  margin-top: 30px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.episode {
+  display: block;
+  text-align: center;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  padding: 0 15px;
+  box-shadow: 5px 5px 10px black;
+}
+
 #root {
-  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.season-episode {
+  color: rgb(24, 24, 24);
+  background-color: rgba(226, 243, 74, 0.925);
+  width: 65px;
+  padding: 5px;
+  margin-left: 14em;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 100px;
+}
+
+.link-Tv-Maze {
+  height: 140px;
+  background-color: rgb(40, 40, 40);
+  bottom: 50%;
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-decoration: none;
+  color: rgb(197, 202, 197);
+  padding: 10px 5px;
+  position: fixed;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
+}
+
+.link-Tv-Maze:hover {
+  background-color: rgb(0, 77, 128);
+  color: honeydew;
+}
+
+input {
+  width: 250px;
+  padding: 5px;
+  outline: none;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+.title-search {
+  color: white;
+  margin: 10px;
+}
+
+p {
+  text-align: left;
+}
+
+.num-episodes {
+  margin: 10px;
+  color: whitesmoke;
+}
+
+select {
+  height: 30px;
+  border: none;
+}
+
+.select {
+  background-color: rgb(0, 102, 128);
+  color: whitesmoke;
+  box-shadow: 5px 5px 10px black;
+  margin: 0px 50px;
+  outline: none;
+}
+
+#shows {
+  background-color: teal;
+  color: rgb(223, 221, 221);
+  box-shadow: 5px 5px 10px black;
+  margin: 20px 10px;
+  outline: none;
+}
+
+.div-show {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(40, 40, 40);
+  margin: 10px 20px;
+  color: rgb(223, 231, 223);
+  box-shadow: 5px 5px 10px black;
+  border-radius: 50px;
+}
+
+.div-link {
+  margin: 20px;
+  background-color: rgb(150, 247, 40);
+}
+
+.div-link:hover {
+  margin: 20px;
+  background-color: rgb(231, 238, 231);
+}
+
+.link-title {
+  cursor: pointer;
+  font-size: 30px;
+  padding: 2em;
+  color: rgb(40, 40, 40);
+}
+
+.link-title:hover {
+  color: rgb(42, 88, 126);
+}
+
+.container-show {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.details-div {
+  width: 200px;
+  border: 2px solid rgb(43, 95, 163);
+  height: 270px;
+  padding: 10px;
+  text-align: left;
+}
+
+.show-summary {
+  width: 550px;
+  margin: 10px;
+}
+
+.div-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.num-show {
+  color: honeydew;
+}
+
+span {
+  background-color: rgb(221, 255, 71);
+}
+
+@media (max-width: 1000px) {
+  .search {
+    flex-direction: column;
+  }
+
+  .container-show {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .div-link {
+    text-align: center;
+  }
+
+  .link-title {
+    font-size: 25px;
+    padding: 0.5em;
+  }
+
+  .details-div {
+    height: 70px;
+  }
+
+  .show-summary {
+    width: 100%;
+  }
+
+  .div-filter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
